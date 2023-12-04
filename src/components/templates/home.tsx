@@ -1,4 +1,4 @@
-import { BaseHTML } from "./BaseHTML";
+import { BaseHTML } from "./base";
 
 export const Home = () => {
   return (
