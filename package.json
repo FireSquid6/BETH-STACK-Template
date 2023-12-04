@@ -2,10 +2,7 @@
   "name": "bethstack-template",
   "version": "0.1.0",
   "scripts": {
-    "tailwindcss": "bunx tailwindcss -i ./src/components/styles/globals.css -o ./public/globals.css --watch",
-    "db:generate": "drizzle-kit generate:sqlite",
-    "db:migrate": "bun run ./src/db/migrator.ts",
-    "db:studio": "drizzle-kit studio --port 3333",
+    "tailwindcss": "bunx tailwindcss -i ./src/globals.css -o ./public/generatedStyles.css --watch",
     "dev": "bun run --watch src/main.tsx",
     "start": "concurrently \"bun run tailwindcss\" \"bun run dev\""
   },
